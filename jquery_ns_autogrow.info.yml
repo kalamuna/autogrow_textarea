@@ -1,0 +1,5 @@
+name: jQuery NS Autogrow
+type: module
+description: Adds the jQuery Autogrow plugin to the page.
+package: User Interface
+core: 8.x

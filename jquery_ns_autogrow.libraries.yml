@@ -1,0 +1,23 @@
+jquery_ns_autogrow:
+  remote: https://github.com/ro31337/jquery.ns-autogrow
+  version: VERSION
+  license:
+    name: MIT
+    gpl-compatible: false
+  js:
+    /libraries/jquery_ns_autogrow/jquery.ns-autogrow.min.js: { minified: true }
+  dependencies:
+    - core/jquery
+
+jquery_ns_autogrow_behaviors:
+  version: VERSION
+  license:
+    name: MIT
+    gpl-compatible: false
+  js:
+    js/jquery_ns_autogrow_behaviors.js:
+      minified: false
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - jquery_ns_autogrow/jquery_ns_autogrow
