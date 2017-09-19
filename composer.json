@@ -10,10 +10,27 @@
     "homepage": "https://robloach.net",
     "role": "Maintainer"
   }],
-  "repositories": [{
-    "type": "composer",
-    "url": "https://packages.drupal.org/8"
-  }],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ro31337/jquery_ns_autogrow",
+        "version": "1.1.6",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/ro31337/jquery.ns-autogrow/archive/1.1.6.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "^1.2.0"
+        }
+      }
+    }
+  ],
   "homepage": "https://github.com/kalamuna/autogrow_textarea",
   "minimum-stability": "dev",
   "support": {
@@ -21,6 +38,7 @@
     "source": "https://github.com/kalamuna/autogrow_textarea.git"
   },
   "require": {
-    "drupal/core": "~8"
+    "drupal/core": "~8",
+    "ro31337/jquery_ns_autogrow": "1.1.6"
   }
 }
