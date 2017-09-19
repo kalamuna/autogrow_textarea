@@ -9,13 +9,13 @@ jquery_ns_autogrow:
   dependencies:
     - core/jquery
 
-jquery_ns_autogrow_behaviors:
+autogrow_textarea_behaviors:
   version: VERSION
   license:
     name: MIT
     gpl-compatible: false
   js:
-    js/jquery_ns_autogrow_behaviors.js:
+    js/autogrow_textarea_behaviors.js:
       minified: false
   dependencies:
     - core/jquery
