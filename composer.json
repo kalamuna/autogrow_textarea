@@ -16,10 +16,6 @@
       "homepage": "https://www.drupal.org/user/829152"
     }
   ],
-  "repositories": [{
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-  }],
   "homepage": "https://github.com/kalamuna/autogrow_textarea",
   "minimum-stability": "dev",
   "support": {
@@ -27,7 +23,6 @@
     "source": "https://github.com/kalamuna/autogrow_textarea.git"
   },
   "require": {
-    "drupal/core": "~8",
     "kalamuna/jquery_ns_autogrow": "dev-master"
   }
 }
