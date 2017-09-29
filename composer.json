@@ -4,12 +4,18 @@
   "description": "Adds jQuery NS Autogrow to all textarea's in Drupal 8.",
   "keywords": ["Drupal"],
   "license": "MIT",
-  "authors": [{
-    "name": "Rob Loach",
-    "email": "robloach@gmail.com",
-    "homepage": "https://robloach.net",
-    "role": "Maintainer"
-  }],
+  "authors": [
+    {
+      "name": "Rob Loach",
+      "email": "robloach@gmail.com",
+      "homepage": "https://robloach.net",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Gremy",
+      "homepage": "https://www.drupal.org/user/829152"
+    }
+  ],
   "repositories": [{
       "type": "composer",
       "url": "https://packages.drupal.org/8"
@@ -22,6 +28,6 @@
   },
   "require": {
     "drupal/core": "~8",
-    "ro31337/jquery_ns_autogrow": "1.1.6"
+    "kalamuna/jquery_ns_autogrow": "dev-master"
   }
 }
