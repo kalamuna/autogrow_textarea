@@ -20,4 +20,4 @@ autogrow_textarea_behaviors:
   dependencies:
     - core/jquery
     - core/jquery.once
-    - jquery_ns_autogrow/jquery_ns_autogrow
+    - autogrow_textarea/jquery_ns_autogrow

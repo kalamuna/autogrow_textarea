@@ -7,7 +7,7 @@ function autogrow_textarea_element_info_alter(array &$types) {
   // Change the way the textarea element is used.
   if (isset($types['textarea'])) {
     // Add the jQuery NS Autogrow behavior to the page.
-    $library = 'autogrow_textarea/jquery_ns_autogrow';
+    $library = 'autogrow_textarea/autogrow_textarea_behaviors';
     $types['textarea']['#attached']['library'][] = $library;
   }
 }
