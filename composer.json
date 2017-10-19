@@ -23,6 +23,6 @@
     "source": "https://github.com/kalamuna/autogrow_textarea.git"
   },
   "require": {
-    "kalamuna/jquery_ns_autogrow": "dev-master"
+    "components/jquery_ns_autogrow": "~1.1.7"
   }
 }
