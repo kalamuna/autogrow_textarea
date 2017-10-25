@@ -18,6 +18,7 @@
   ],
   "homepage": "https://github.com/kalamuna/autogrow_textarea",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "support": {
     "issues": "https://github.com/kalamuna/autogrow_textarea/issues",
     "source": "https://github.com/kalamuna/autogrow_textarea.git"
