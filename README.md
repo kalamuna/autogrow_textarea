@@ -1,6 +1,6 @@
 # Autogrow Textarea Drupal Module
 
-Adds [jQuery NS-Autogrow](https://github.com/ro31337/jquery.ns-autogrow) to the Drupal's `textarea` Form API element.
+Adds [jQuery NS-Autogrow](https://github.com/ro31337/jquery.ns-autogrow) to Drupal's `textarea` Form API element.
 
 ## Installation
 
