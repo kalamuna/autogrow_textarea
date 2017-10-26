@@ -24,9 +24,10 @@ Adds [jQuery NS-Autogrow](https://github.com/ro31337/jquery.ns-autogrow) to Drup
 **just download**
 
 1. Download the latest release of this module's code [here](https://github.com/kalamuna/autogrow_textarea/releases/latest).
-2. Extract it into `modules/contrib/autogrow_textarea`
+1. Extract it into the modules directory of your Drupal root.
+1. Download the [`jquery_ns_autogrow` library](https://github.com/ro31337/jquery.ns-autogrow/releases/latest).
+1. Extract it into the `libraries/jquery_ns_autogrow` directory inside your Drupal root.
 
 ### Install
 
-2. Install and enabe the "Autogrow Textarea" module (`drush en autogrow_textarea`)
-3. If you did not use composer you need to [download the `jquery_ns_autogrow` library](https://github.com/ro31337/jquery.ns-autogrow/releases/latest) and extract it in the `libraries/jquery_ns_autogrow` directory inside your Drupal root.
+Install and enabe the "Autogrow Textarea" module (`drush en autogrow_textarea`).
