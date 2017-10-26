@@ -26,11 +26,5 @@
     "require": {
         "components/jquery_ns_autogrow": "^1.1.6",
         "oomphinc/composer-installers-extender": "^1.1"
-    },
-    "extra": {
-        "installer-types": ["component"],
-        "installer-paths": {
-            "web/libraries/{$name}": ["type:component"]
-        }
     }
 }
