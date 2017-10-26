@@ -1,7 +1,7 @@
 {
     "name": "kalamuna/autogrow_textarea",
     "type": "drupal-module",
-    "description": "Adds jQuery NS Autogrow to all textarea's in Drupal 8.",
+    "description": "Adds jQuery NS-Autogrow to the Drupal's textarea Form API element.",
     "keywords": ["Drupal"],
     "license": "MIT",
     "authors": [
