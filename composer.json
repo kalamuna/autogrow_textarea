@@ -1,29 +1,36 @@
 {
-  "name": "kalamuna/autogrow_textarea",
-  "type": "drupal-module",
-  "description": "Adds jQuery NS Autogrow to all textarea's in Drupal 8.",
-  "keywords": ["Drupal"],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Rob Loach",
-      "email": "robloach@gmail.com",
-      "homepage": "https://robloach.net",
-      "role": "Maintainer"
+    "name": "kalamuna/autogrow_textarea",
+    "type": "drupal-module",
+    "description": "Adds jQuery NS Autogrow to all textarea's in Drupal 8.",
+    "keywords": ["Drupal"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Loach",
+            "email": "robloach@gmail.com",
+            "homepage": "https://robloach.net",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Gremy",
+            "homepage": "https://www.drupal.org/user/829152"
+        }
+    ],
+    "homepage": "https://github.com/kalamuna/autogrow_textarea",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/kalamuna/autogrow_textarea/issues",
+        "source": "https://github.com/kalamuna/autogrow_textarea.git"
     },
-    {
-      "name": "Gremy",
-      "homepage": "https://www.drupal.org/user/829152"
+    "require": {
+        "components/jquery_ns_autogrow": "^1.1.6",
+        "oomphinc/composer-installers-extender": "^1.1"
+    },
+    "extra": {
+        "installer-types": ["component"],
+        "installer-paths": {
+            "web/libraries/{$name}": ["type:component"]
+        }
     }
-  ],
-  "homepage": "https://github.com/kalamuna/autogrow_textarea",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "support": {
-    "issues": "https://github.com/kalamuna/autogrow_textarea/issues",
-    "source": "https://github.com/kalamuna/autogrow_textarea.git"
-  },
-  "require": {
-    "components/jquery_ns_autogrow": "^1.1.6"
-  }
 }
