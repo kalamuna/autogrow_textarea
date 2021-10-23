@@ -24,7 +24,6 @@
         "source": "https://github.com/kalamuna/autogrow_textarea.git"
     },
     "require": {
-        "components/jquery_ns_autogrow": "^1.1.6",
-        "oomphinc/composer-installers-extender": "^1.1"
+        "components/jquery_ns_autogrow": "^1.1.6"
     }
 }
