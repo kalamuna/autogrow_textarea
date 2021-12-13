@@ -45,7 +45,7 @@ function drush_autogrow_plugin() {
   // Create the path if it does not exist.
   if (!is_dir($path)) {
     drush_op('mkdir', $path);
-    drush_log(dt('Directory @path was created', ['@path' => $path]), 'notice');
+    \Drupal::logger(dt('Directory @path was created', ['@path' => $path]), 'notice');
   }
 
   // Set the directory to the download location.
@@ -59,9 +59,10 @@ function drush_autogrow_plugin() {
 
     // Remove any existing jQuery NS-Autogrow plugin directory.
     if (is_dir($dirname) || is_dir('jquery_ns_autogrow')) {
-      drush_delete_dir($dirname, TRUE);
-      drush_delete_dir('jquery_ns_autogrow', TRUE);
-      drush_log(dt('An existing jQuery NS-Autogrow plugin was deleted from @path', ['@path' => $path]), 'notice');
+      $Filesystem = new Symfony\Component\Filesystem\Filesystem();
+      $Filesystem->remove($dirname, TRUE);
+      $Filesystem->remove('jquery_ns_autogrow', TRUE);
+      \Drupal::logger(dt('An existing jQuery NS-Autogrow plugin was deleted from @path', ['@path' => $path]), 'notice');
     }
 
     // Decompress the zip archive.
@@ -75,10 +76,10 @@ function drush_autogrow_plugin() {
   }
 
   if (is_dir($dirname)) {
-    drush_log(dt('jQuery NS-Autogrow plugin has been installed in @path', ['@path' => $path]), 'success');
+    \Drupal::logger(dt('jQuery NS-Autogrow plugin has been installed in @path', ['@path' => $path]), 'success');
   }
   else {
-    drush_log(dt('Drush was unable to install the jQuery NS-Autogrow plugin to @path', ['@path' => $path]), 'error');
+    \Drupal::logger(dt('Drush was unable to install the jQuery NS-Autogrow plugin to @path', ['@path' => $path]), 'error');
   }
 
   // Set working directory back to the previous working directory.
