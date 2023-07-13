@@ -1,8 +1,10 @@
 {
     "name": "kalamuna/autogrow_textarea",
     "type": "drupal-module",
-    "description": "Adds jQuery NS-Autogrow to the Drupal's textarea Form API element.",
-    "keywords": ["Drupal"],
+    "description": "Autogrow Textarea: Automatically adjust textarea height based on user input.",
+    "keywords": [
+        "Drupal"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -17,13 +19,8 @@
         }
     ],
     "homepage": "https://github.com/kalamuna/autogrow_textarea",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "support": {
         "issues": "https://github.com/kalamuna/autogrow_textarea/issues",
         "source": "https://github.com/kalamuna/autogrow_textarea.git"
-    },
-    "require": {
-        "components/jquery_ns_autogrow": "^1.1.6"
     }
 }

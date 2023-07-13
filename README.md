@@ -1,33 +1,26 @@
 # Autogrow Textarea Drupal Module
 
-Adds [jQuery NS-Autogrow](https://github.com/ro31337/jquery.ns-autogrow) to Drupal's `textarea` Form API element.
+Automatically adjust textarea height based on user input.
+
+While CKEditor will automatically adjust the height of textareas, non-CKEditor textareas do not have this ability. This module adds that functionality to non-CKEditor textareas.
+
+For a full description of the module, visit the [project page](https://www.drupal.org/project/autogrow_textarea).
+
+Submit bug reports and feature suggestions, or track changes in the [issue queue](https://www.drupal.org/project/issues/autogrow_textarea).
+
+## Requirements
+
+This module requires no modules outside of Drupal core.
 
 ## Installation
 
-### Download the module
+Install as you would normally install a contributed Drupal module. For further information, see [Installing Drupal Modules](https://www.drupal.org/docs/extending-drupal/installing-drupal-modules).
 
-**via Composer**
+## Configuration
 
-1. Add the following snippet to your `composer.json` to save the JS library into the correct folder:
-    ```
-    "extra": {
-        "installer-types": ["component"],
-        "installer-paths": {
-            "web/libraries/{$name}": ["type:component"]
-        }
-    }
-    ```
-    where `web/libraries/` is the path to your libraries directory relative to your _project_ root.
+The module has no menu or modifiable settings. There is no configuration. When enabled, the module will prevent the links from appearing. To get the links back, disable the module and clear caches.
 
-1. Run `composer require kalamuna/autogrow_textarea`
+## Maintainers
 
-**just download**
-
-1. Download the latest release of this module's code [here](https://github.com/kalamuna/autogrow_textarea/releases/latest).
-1. Extract it into the modules directory of your Drupal root.
-1. Download the [`jquery_ns_autogrow` library](https://github.com/ro31337/jquery.ns-autogrow/releases/latest).
-1. Extract it into the `libraries/jquery_ns_autogrow` directory inside your Drupal root.
-
-### Install
-
-Install and enabe the "Autogrow Textarea" module (`drush en autogrow_textarea`).
+- Rob Loach - [RobLoach](https://www.drupal.org/u/RobLoach)
+- Emanuel Greucean - [gremy](https://www.drupal.org/u/gremy)

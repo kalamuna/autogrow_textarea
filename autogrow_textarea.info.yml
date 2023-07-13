@@ -1,6 +1,5 @@
 name: Autogrow Textarea
 type: module
-description: Adds the jQuery Autogrow plugin to the page.
+description: Automatically adjust textarea height based on user input.
 package: User Interface
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10

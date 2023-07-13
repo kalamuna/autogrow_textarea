@@ -1,23 +1,9 @@
-jquery_ns_autogrow:
-  remote: https://github.com/ro31337/jquery.ns-autogrow
-  version: 1.1.6
+autogrow_textarea:
+  version: 2.0.0
   license:
     name: MIT
-    gpl-compatible: false
+    gpl-compatible: true
   js:
-    /libraries/jquery_ns_autogrow/dist/jquery.ns-autogrow.min.js: { minified: true }
-  dependencies:
-    - core/jquery
-
-autogrow_textarea_behaviors:
-  version: VERSION
-  license:
-    name: MIT
-    gpl-compatible: false
-  js:
-    js/autogrow_textarea_behaviors.js:
+    js/autogrow_textarea.js:
       minified: false
-  dependencies:
-    - core/jquery
-    - core/jquery.once
-    - autogrow_textarea/jquery_ns_autogrow
+  # TODO: Add dependencies: behaviors and "once"

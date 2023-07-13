@@ -2,12 +2,13 @@
 
 /**
  * Implements hook_element_info_alter().
+ *
+ * Adds autogrow_textarea.js as attached JavaScript to each textarea.
  */
-function autogrow_textarea_element_info_alter(array &$types) {
+function autogrow_textarea_element_info_alter(array &$info) {
   // Change the way the textarea element is used.
-  if (isset($types['textarea'])) {
-    // Add the jQuery NS Autogrow behavior to the page.
-    $library = 'autogrow_textarea/autogrow_textarea_behaviors';
-    $types['textarea']['#attached']['library'][] = $library;
+  if (isset($info['textarea'])) {
+    $library = 'autogrow_textarea/autogrow_textarea';
+    $info['textarea']['#attached']['library'][] = $library;
   }
 }
